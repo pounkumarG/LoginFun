@@ -1,0 +1,9 @@
+describe("swag lab page automation",()=>{
+    it('to check nagative username',()=>{
+      cy.visit('https://magento.softwaretestingboard.com/')
+      cy.contains('Sign In').click();
+      cy.get('#email').type("pounkumar797@gmail.com");
+      cy.get('[name="login[password]"]').type("Pounkumar#797#");
+      cy.get('button[class="action login primary"][name="send"][id="send2"]').click();      
+    })
+})
