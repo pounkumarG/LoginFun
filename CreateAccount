@@ -1,0 +1,13 @@
+describe('amazon iphone15pro add to card page',()=>{
+    it ('validate login amazon site using mobile iphone 15pro',()=>{
+       cy.visit('https://magento.softwaretestingboard.com/')
+       cy.contains('Create an Account').click();
+       cy.get('#firstname').type('Pounkumar')
+      cy.get('#lastname').type('G')
+      cy.get('[name="email"]').type("pounkumar797@gmail.com");
+      cy.get('[id="password"]').type("Pounkumar#797#");
+      cy.get('[name="password_confirmation"]').type("Pounkumar#797#");
+      cy.get('[title="Create an Account"]').click();
+
+    })
+})
